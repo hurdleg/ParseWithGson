@@ -51,10 +51,10 @@ public class MyService extends IntentService {
         }
 
         Gson gson = new Gson();
-        PlanetPOJO[] planetArray = gson.fromJson(response, PlanetPOJO[].class);
+        PlanetPOJO[] planetsArray = gson.fromJson(response, PlanetPOJO[].class);
 
         Intent messageIntent = new Intent(MY_SERVICE_MESSAGE);
-        messageIntent.putExtra(MY_SERVICE_PAYLOAD, planetArray);
+        messageIntent.putExtra(MY_SERVICE_PAYLOAD, planetsArray);
         LocalBroadcastManager manager =
                 LocalBroadcastManager.getInstance(getApplicationContext());
         manager.sendBroadcast(messageIntent);

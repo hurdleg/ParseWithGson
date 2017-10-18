@@ -11,8 +11,18 @@ import android.os.Parcelable;
  * Copy 'n paste the JSON structure for a Planet: https://planets.mybluemix.net/planets/0
  *
  * Next, use this online tool to generate this POJO class: http://www.jsonschema2pojo.org/
+ * Apply these settings:
+ *   Package: mad9132.planets.model
+ *   Class name: PlanetPOJO
+ *   Target language: Java
+ *   Source type: JSON
+ *   Annotation style: None
+ *   Check:
+ *      Use primitive types
+ *      Use double numbers
+ *      Include getters and setters
  *
- * Finally, implement the Parceable inteface (click 'PlanetPOJO' > Code > Generate... > Parceable
+ * Finally, implement the Parceable interface (click 'PlanetPOJO' > Code > Generate... > Parceable
  *
  * @author Gerald.Hurdle@AlgonquinCollege.com
  *
